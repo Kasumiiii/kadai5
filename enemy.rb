@@ -4,7 +4,8 @@ class Enemy < Sprite
   def update
     self.y += 1
     if self.y >= Window.height - self.image.height
-      self.vanish
+    self.x = rand(800)
+    self.y = rand(1)
     end
   end
 
